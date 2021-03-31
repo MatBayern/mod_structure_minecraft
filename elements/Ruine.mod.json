@@ -103,13 +103,7 @@
         "value": "roofed_forest"
       },
       {
-        "value": "taiga_cold"
-      },
-      {
         "value": "taiga_cold_hills"
-      },
-      {
-        "value": "redwood_taiga"
       },
       {
         "value": "redwood_taiga_hills"
@@ -206,6 +200,15 @@
       },
       {
         "value": "mutated_savanna_rock"
+      },
+      {
+        "value": "mutated_mesa"
+      },
+      {
+        "value": "mutated_mesa_rock"
+      },
+      {
+        "value": "mutated_mesa_clear_rock"
       }
     ]
   }

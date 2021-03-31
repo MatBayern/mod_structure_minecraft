@@ -117,11 +117,7 @@ public class StructureRuine extends ElementsSturcturemodv.ModElement {
 					biomeCriteria = true;
 				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("roofed_forest")))
 					biomeCriteria = true;
-				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("taiga_cold")))
-					biomeCriteria = true;
 				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("taiga_cold_hills")))
-					biomeCriteria = true;
-				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("redwood_taiga")))
 					biomeCriteria = true;
 				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("redwood_taiga_hills")))
 					biomeCriteria = true;
@@ -186,6 +182,12 @@ public class StructureRuine extends ElementsSturcturemodv.ModElement {
 				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("mutated_savanna")))
 					biomeCriteria = true;
 				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("mutated_savanna_rock")))
+					biomeCriteria = true;
+				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("mutated_mesa")))
+					biomeCriteria = true;
+				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("mutated_mesa_rock")))
+					biomeCriteria = true;
+				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("mutated_mesa_clear_rock")))
 					biomeCriteria = true;
 				if (!biomeCriteria)
 					continue;
