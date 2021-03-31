@@ -43,18 +43,15 @@ public class StructureRuine extends ElementsSturcturemodv.ModElement {
 				if (isNetherType) {
 					boolean notpassed = true;
 					while (height > 0) {
-						if (notpassed && (world.isAirBlock(new BlockPos(i, height, k)) || !world.getBlockState(new BlockPos(i, height, k)).getBlock()
-								.getMaterial(world.getBlockState(new BlockPos(i, height, k))).blocksMovement()))
+						if (notpassed && world.isAirBlock(new BlockPos(i, height, k)))
 							notpassed = false;
-						else if (!notpassed && !world.isAirBlock(new BlockPos(i, height, k)) && world.getBlockState(new BlockPos(i, height, k))
-								.getBlock().getMaterial(world.getBlockState(new BlockPos(i, height, k))).blocksMovement())
+						else if (!notpassed && !world.isAirBlock(new BlockPos(i, height, k)))
 							break;
 						height--;
 					}
 				} else {
 					while (height > 0) {
-						if (!world.isAirBlock(new BlockPos(i, height, k)) && world.getBlockState(new BlockPos(i, height, k)).getBlock()
-								.getMaterial(world.getBlockState(new BlockPos(i, height, k))).blocksMovement())
+						if (!world.isAirBlock(new BlockPos(i, height, k)))
 							break;
 						height--;
 					}
