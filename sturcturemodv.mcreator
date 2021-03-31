@@ -1,6 +1,15 @@
 {
   "id_map": {},
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "Cot",
+      "type": "structure",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    }
+  ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
@@ -19,6 +28,7 @@
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "1.12.2",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.sturcturemodv",
     "lockBaseModFiles": false
   },
