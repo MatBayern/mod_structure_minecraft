@@ -34,7 +34,7 @@ public class StructureRuine extends ElementsSturcturemodv.ModElement {
 			dimensionCriteria = true;
 		if (!dimensionCriteria)
 			return;
-		if ((random.nextInt(1000000) + 1) <= 100000) {
+		if ((random.nextInt(1000000) + 1) <= 1000) {
 			int count = random.nextInt(1) + 1;
 			for (int a = 0; a < count; a++) {
 				int i = i2 + random.nextInt(16) + 8;
@@ -59,142 +59,18 @@ public class StructureRuine extends ElementsSturcturemodv.ModElement {
 				int j = height - 1;
 				boolean biomeCriteria = false;
 				Biome biome = world.getBiome(new BlockPos(i, j, k));
-				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("ocean")))
+				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("taiga")))
 					biomeCriteria = true;
-				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("plains")))
+				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("taiga_cold")))
 					biomeCriteria = true;
-				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("desert")))
-					biomeCriteria = true;
-				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("extreme_hills")))
-					biomeCriteria = true;
-				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("forest")))
-					biomeCriteria = true;
-				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("swampland")))
-					biomeCriteria = true;
-				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("river")))
-					biomeCriteria = true;
-				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("hell")))
-					biomeCriteria = true;
-				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("sky")))
-					biomeCriteria = true;
-				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("frozen_ocean")))
-					biomeCriteria = true;
-				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("frozen_river")))
-					biomeCriteria = true;
-				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("ice_flats")))
-					biomeCriteria = true;
-				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("ice_mountains")))
-					biomeCriteria = true;
-				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("mushroom_island")))
-					biomeCriteria = true;
-				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("mushroom_island_shore")))
-					biomeCriteria = true;
-				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("beaches")))
-					biomeCriteria = true;
-				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("desert_hills")))
-					biomeCriteria = true;
-				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("forest_hills")))
-					biomeCriteria = true;
-				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("taiga_hills")))
-					biomeCriteria = true;
-				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("smaller_extreme_hills")))
-					biomeCriteria = true;
-				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("jungle")))
-					biomeCriteria = true;
-				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("jungle_hills")))
-					biomeCriteria = true;
-				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("jungle_edge")))
-					biomeCriteria = true;
-				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("deep_ocean")))
-					biomeCriteria = true;
-				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("stone_beach")))
-					biomeCriteria = true;
-				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("cold_beach")))
-					biomeCriteria = true;
-				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("birch_forest")))
-					biomeCriteria = true;
-				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("birch_forest_hills")))
-					biomeCriteria = true;
-				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("roofed_forest")))
-					biomeCriteria = true;
-				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("taiga_cold_hills")))
-					biomeCriteria = true;
-				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("redwood_taiga_hills")))
-					biomeCriteria = true;
-				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("extreme_hills_with_trees")))
-					biomeCriteria = true;
-				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("savanna")))
-					biomeCriteria = true;
-				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("savanna_rock")))
-					biomeCriteria = true;
-				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("mesa")))
-					biomeCriteria = true;
-				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("mesa_rock")))
-					biomeCriteria = true;
-				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("mesa_clear_rock")))
-					biomeCriteria = true;
-				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("plains")))
-					biomeCriteria = true;
-				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("plains")))
-					biomeCriteria = true;
-				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("plains")))
-					biomeCriteria = true;
-				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("plains")))
-					biomeCriteria = true;
-				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("plains")))
-					biomeCriteria = true;
-				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("plains")))
-					biomeCriteria = true;
-				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("plains")))
-					biomeCriteria = true;
-				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("mutated_plains")))
-					biomeCriteria = true;
-				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("mutated_desert")))
-					biomeCriteria = true;
-				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("mutated_extreme_hills")))
-					biomeCriteria = true;
-				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("mutated_forest")))
-					biomeCriteria = true;
-				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("mutated_taiga")))
-					biomeCriteria = true;
-				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("mutated_swampland")))
-					biomeCriteria = true;
-				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("mutated_ice_flats")))
-					biomeCriteria = true;
-				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("mutated_jungle")))
-					biomeCriteria = true;
-				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("mutated_jungle_edge")))
-					biomeCriteria = true;
-				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("mutated_birch_forest")))
-					biomeCriteria = true;
-				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("mutated_birch_forest_hills")))
-					biomeCriteria = true;
-				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("mutated_roofed_forest")))
-					biomeCriteria = true;
-				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("mutated_taiga_cold")))
-					biomeCriteria = true;
-				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("mutated_redwood_taiga")))
-					biomeCriteria = true;
-				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("mutated_redwood_taiga_hills")))
-					biomeCriteria = true;
-				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("mutated_extreme_hills_with_trees")))
-					biomeCriteria = true;
-				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("mutated_savanna")))
-					biomeCriteria = true;
-				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("mutated_savanna_rock")))
-					biomeCriteria = true;
-				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("mutated_mesa")))
-					biomeCriteria = true;
-				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("mutated_mesa_rock")))
-					biomeCriteria = true;
-				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("mutated_mesa_clear_rock")))
+				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("redwood_taiga")))
 					biomeCriteria = true;
 				if (!biomeCriteria)
 					continue;
 				if (world.isRemote)
 					return;
 				Template template = ((WorldServer) world).getStructureTemplateManager().getTemplate(world.getMinecraftServer(),
-						new ResourceLocation("sturcturemodv", "untergrund"));
+						new ResourceLocation("sturcturemodv", "underground"));
 				if (template == null)
 					return;
 				Rotation rotation = Rotation.values()[random.nextInt(3)];
