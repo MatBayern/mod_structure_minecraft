@@ -2,14 +2,14 @@
   "_fv": 6,
   "_type": "structure",
   "definition": {
-    "structure": "ruine",
+    "structure": "untergrund",
     "randomlyRotateStructure": true,
     "surfaceDetectionType": "First block",
-    "spawnProbability": 10000,
+    "spawnProbability": 100000,
     "minCountPerChunk": 1,
     "maxCountPerChunk": 1,
     "spawnLocation": "Ground",
-    "spawnHeightOffset": 0,
+    "spawnHeightOffset": -3,
     "spawnWorldTypes": [
       "Surface"
     ],
@@ -19,10 +19,16 @@
         "value": "ocean"
       },
       {
+        "value": "plains"
+      },
+      {
         "value": "desert"
       },
       {
         "value": "mountains"
+      },
+      {
+        "value": "forest"
       },
       {
         "value": "swamp"
@@ -43,6 +49,9 @@
         "value": "frozen_river"
       },
       {
+        "value": "snowy_tundra"
+      },
+      {
         "value": "snowy_mountains"
       },
       {
@@ -56,6 +65,12 @@
       },
       {
         "value": "desert_hills"
+      },
+      {
+        "value": "forest_hills"
+      },
+      {
+        "value": "taiga_hills"
       },
       {
         "value": "smaller_extreme_hills"
@@ -77,6 +92,27 @@
       },
       {
         "value": "cold_beach"
+      },
+      {
+        "value": "birch_forest"
+      },
+      {
+        "value": "birch_forest_hills"
+      },
+      {
+        "value": "roofed_forest"
+      },
+      {
+        "value": "taiga_cold"
+      },
+      {
+        "value": "taiga_cold_hills"
+      },
+      {
+        "value": "redwood_taiga"
+      },
+      {
+        "value": "redwood_taiga_hills"
       },
       {
         "value": "extreme_hills_with_trees"
@@ -118,10 +154,19 @@
         "value": "deep_frozen_ocean"
       },
       {
+        "value": "mutated_plains"
+      },
+      {
         "value": "mutated_desert"
       },
       {
         "value": "mutated_extreme_hills"
+      },
+      {
+        "value": "mutated_forest"
+      },
+      {
+        "value": "mutated_taiga"
       },
       {
         "value": "mutated_swampland"
@@ -136,6 +181,24 @@
         "value": "mutated_jungle_edge"
       },
       {
+        "value": "mutated_birch_forest"
+      },
+      {
+        "value": "mutated_birch_forest_hills"
+      },
+      {
+        "value": "mutated_roofed_forest"
+      },
+      {
+        "value": "mutated_taiga_cold"
+      },
+      {
+        "value": "mutated_redwood_taiga"
+      },
+      {
+        "value": "mutated_redwood_taiga_hills"
+      },
+      {
         "value": "mutated_extreme_hills_with_trees"
       },
       {
@@ -143,72 +206,6 @@
       },
       {
         "value": "mutated_savanna_rock"
-      },
-      {
-        "value": "mutated_mesa"
-      },
-      {
-        "value": "mutated_mesa_rock"
-      },
-      {
-        "value": "mutated_mesa_clear_rock"
-      },
-      {
-        "value": "bamboo_jungle"
-      },
-      {
-        "value": "bamboo_jungle_hills"
-      },
-      {
-        "value": "small_end_islands"
-      },
-      {
-        "value": "end_midlands"
-      },
-      {
-        "value": "end_highlands"
-      },
-      {
-        "value": "end_barrens"
-      },
-      {
-        "value": "void"
-      },
-      {
-        "value": "desert_hills"
-      },
-      {
-        "value": "forest_hills"
-      },
-      {
-        "value": "taiga_hills"
-      },
-      {
-        "value": "smaller_extreme_hills"
-      },
-      {
-        "value": "birch_forest_hills"
-      },
-      {
-        "value": "taiga_cold_hills"
-      },
-      {
-        "value": "redwood_taiga_hills"
-      },
-      {
-        "value": "extreme_hills_with_trees"
-      },
-      {
-        "value": "mutated_extreme_hills"
-      },
-      {
-        "value": "mutated_birch_forest_hills"
-      },
-      {
-        "value": "mutated_redwood_taiga_hills"
-      },
-      {
-        "value": "mutated_extreme_hills_with_trees"
       }
     ]
   }
