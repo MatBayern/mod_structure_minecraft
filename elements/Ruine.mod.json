@@ -13,7 +13,11 @@
     "spawnWorldTypes": [
       "Surface"
     ],
-    "restrictionBlocks": [],
+    "restrictionBlocks": [
+      {
+        "value": "Blocks.GRASS"
+      }
+    ],
     "restrictionBiomes": [
       {
         "value": "taiga"

@@ -13,6 +13,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.Rotation;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.Mirror;
+import net.minecraft.init.Blocks;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.block.Block;
 
@@ -57,6 +58,14 @@ public class StructureRuine extends ElementsSturcturemodv.ModElement {
 					}
 				}
 				int j = height - 1;
+				IBlockState blockAt = world.getBlockState(new BlockPos(i, j + 1, k));
+				boolean blockCriteria = false;
+				IBlockState require;
+				require = Blocks.GRASS.getDefaultState();
+				if (blockAt.getBlock() == require.getBlock())
+					blockCriteria = true;
+				if (!blockCriteria)
+					continue;
 				boolean biomeCriteria = false;
 				Biome biome = world.getBiome(new BlockPos(i, j, k));
 				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("taiga")))
