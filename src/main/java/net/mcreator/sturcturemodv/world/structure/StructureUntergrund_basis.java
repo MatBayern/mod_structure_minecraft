@@ -22,9 +22,9 @@ import net.mcreator.sturcturemodv.ElementsSturcturemodv;
 import java.util.Random;
 
 @ElementsSturcturemodv.ModElement.Tag
-public class StructureRuine extends ElementsSturcturemodv.ModElement {
-	public StructureRuine(ElementsSturcturemodv instance) {
-		super(instance, 2);
+public class StructureUntergrund_basis extends ElementsSturcturemodv.ModElement {
+	public StructureUntergrund_basis(ElementsSturcturemodv instance) {
+		super(instance, 3);
 	}
 
 	@Override
@@ -35,7 +35,7 @@ public class StructureRuine extends ElementsSturcturemodv.ModElement {
 			dimensionCriteria = true;
 		if (!dimensionCriteria)
 			return;
-		if ((random.nextInt(1000000) + 1) <= 1000) {
+		if ((random.nextInt(1000000) + 1) <= 6000) {
 			int count = random.nextInt(1) + 1;
 			for (int a = 0; a < count; a++) {
 				int i = i2 + random.nextInt(16) + 8;
@@ -73,6 +73,8 @@ public class StructureRuine extends ElementsSturcturemodv.ModElement {
 				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("taiga_cold")))
 					biomeCriteria = true;
 				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("redwood_taiga")))
+					biomeCriteria = true;
+				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("forest")))
 					biomeCriteria = true;
 				if (!biomeCriteria)
 					continue;

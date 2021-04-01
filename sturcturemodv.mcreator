@@ -2,9 +2,9 @@
   "id_map": {},
   "mod_elements": [
     {
-      "name": "Ruine",
+      "name": "Untergrund_basis",
       "type": "structure",
-      "sortid": 2,
+      "sortid": 3,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -19,7 +19,7 @@
     "modid": "sturcturemodv",
     "modName": "Sturcture_mod_v0.1",
     "version": "1.0.0",
-    "author": "Martin, MCreator",
+    "author": "Martin, Tobias",
     "websiteURL": "https://mcreator.net",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
