@@ -34,7 +34,7 @@ public class StructureSanddorf extends ElementsSturcturemodv.ModElement {
 			dimensionCriteria = true;
 		if (!dimensionCriteria)
 			return;
-		if ((random.nextInt(1000000) + 1) <= 2500) {
+		if ((random.nextInt(1000000) + 1) <= 100) {
 			int count = random.nextInt(1) + 1;
 			for (int a = 0; a < count; a++) {
 				int i = i2 + random.nextInt(16) + 8;

@@ -35,7 +35,7 @@ public class StructureJungleStatue extends ElementsSturcturemodv.ModElement {
 			dimensionCriteria = true;
 		if (!dimensionCriteria)
 			return;
-		if ((random.nextInt(1000000) + 1) <= 2000) {
+		if ((random.nextInt(1000000) + 1) <= 500) {
 			int count = random.nextInt(1) + 1;
 			for (int a = 0; a < count; a++) {
 				int i = i2 + random.nextInt(16) + 8;

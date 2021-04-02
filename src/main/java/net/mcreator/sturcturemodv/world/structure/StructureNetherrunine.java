@@ -36,7 +36,7 @@ public class StructureNetherrunine extends ElementsSturcturemodv.ModElement {
 		}
 		if (!dimensionCriteria)
 			return;
-		if ((random.nextInt(1000000) + 1) <= 10000) {
+		if ((random.nextInt(1000000) + 1) <= 800) {
 			int count = random.nextInt(1) + 1;
 			for (int a = 0; a < count; a++) {
 				int i = i2 + random.nextInt(16) + 8;
