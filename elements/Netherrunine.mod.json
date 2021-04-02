@@ -2,22 +2,22 @@
   "_fv": 6,
   "_type": "structure",
   "definition": {
-    "structure": "sandneu",
+    "structure": "ruin_nether",
     "randomlyRotateStructure": true,
     "surfaceDetectionType": "First motion blocking block",
-    "spawnProbability": 2500,
+    "spawnProbability": 10000,
     "minCountPerChunk": 1,
     "maxCountPerChunk": 1,
     "spawnLocation": "Ground",
     "spawnHeightOffset": 0,
     "spawnWorldTypes": [
-      "Surface"
+      "Nether"
     ],
-    "restrictionBlocks": [],
-    "restrictionBiomes": [
+    "restrictionBlocks": [
       {
-        "value": "desert"
+        "value": "Blocks.NETHERRACK"
       }
-    ]
+    ],
+    "restrictionBiomes": []
   }
 }

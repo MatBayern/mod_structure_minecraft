@@ -2,21 +2,25 @@
   "_fv": 6,
   "_type": "structure",
   "definition": {
-    "structure": "sandneu",
+    "structure": "ruins2",
     "randomlyRotateStructure": true,
     "surfaceDetectionType": "First motion blocking block",
-    "spawnProbability": 2500,
+    "spawnProbability": 10000,
     "minCountPerChunk": 1,
     "maxCountPerChunk": 1,
     "spawnLocation": "Ground",
-    "spawnHeightOffset": 0,
+    "spawnHeightOffset": 1,
     "spawnWorldTypes": [
       "Surface"
     ],
-    "restrictionBlocks": [],
+    "restrictionBlocks": [
+      {
+        "value": "Blocks.GRASS"
+      }
+    ],
     "restrictionBiomes": [
       {
-        "value": "desert"
+        "value": "savanna"
       }
     ]
   }

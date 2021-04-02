@@ -13,6 +13,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.Rotation;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.Mirror;
+import net.minecraft.init.Blocks;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.block.Block;
 
@@ -21,9 +22,9 @@ import net.mcreator.sturcturemodv.ElementsSturcturemodv;
 import java.util.Random;
 
 @ElementsSturcturemodv.ModElement.Tag
-public class StructureSanddorf extends ElementsSturcturemodv.ModElement {
-	public StructureSanddorf(ElementsSturcturemodv instance) {
-		super(instance, 4);
+public class StructureMonolith extends ElementsSturcturemodv.ModElement {
+	public StructureMonolith(ElementsSturcturemodv instance) {
+		super(instance, 8);
 	}
 
 	@Override
@@ -34,7 +35,7 @@ public class StructureSanddorf extends ElementsSturcturemodv.ModElement {
 			dimensionCriteria = true;
 		if (!dimensionCriteria)
 			return;
-		if ((random.nextInt(1000000) + 1) <= 2500) {
+		if ((random.nextInt(1000000) + 1) <= 10000) {
 			int count = random.nextInt(1) + 1;
 			for (int a = 0; a < count; a++) {
 				int i = i2 + random.nextInt(16) + 8;
@@ -60,21 +61,29 @@ public class StructureSanddorf extends ElementsSturcturemodv.ModElement {
 					}
 				}
 				int j = height - 1;
+				IBlockState blockAt = world.getBlockState(new BlockPos(i, j + 1, k));
+				boolean blockCriteria = false;
+				IBlockState require;
+				require = Blocks.GRASS.getDefaultState();
+				if (blockAt.getBlock() == require.getBlock())
+					blockCriteria = true;
+				if (!blockCriteria)
+					continue;
 				boolean biomeCriteria = false;
 				Biome biome = world.getBiome(new BlockPos(i, j, k));
-				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("desert")))
+				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("plains")))
 					biomeCriteria = true;
 				if (!biomeCriteria)
 					continue;
 				if (world.isRemote)
 					return;
 				Template template = ((WorldServer) world).getStructureTemplateManager().getTemplate(world.getMinecraftServer(),
-						new ResourceLocation("sturcturemodv", "sandneu"));
+						new ResourceLocation("sturcturemodv", "monolith"));
 				if (template == null)
 					return;
 				Rotation rotation = Rotation.values()[random.nextInt(3)];
 				Mirror mirror = Mirror.values()[random.nextInt(2)];
-				BlockPos spawnTo = new BlockPos(i, j + 0, k);
+				BlockPos spawnTo = new BlockPos(i, j + 1, k);
 				IBlockState iblockstate = world.getBlockState(spawnTo);
 				world.notifyBlockUpdate(spawnTo, iblockstate, iblockstate, 3);
 				template.addBlocksToWorldChunk(world, spawnTo, new PlacementSettings().setRotation(rotation).setMirror(mirror)

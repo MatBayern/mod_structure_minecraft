@@ -5,7 +5,6 @@ import net.minecraft.world.gen.structure.template.Template;
 import net.minecraft.world.gen.structure.template.PlacementSettings;
 import net.minecraft.world.gen.IChunkGenerator;
 import net.minecraft.world.chunk.IChunkProvider;
-import net.minecraft.world.biome.Biome;
 import net.minecraft.world.WorldServer;
 import net.minecraft.world.World;
 import net.minecraft.util.math.ChunkPos;
@@ -13,6 +12,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.Rotation;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.Mirror;
+import net.minecraft.init.Blocks;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.block.Block;
 
@@ -21,20 +21,22 @@ import net.mcreator.sturcturemodv.ElementsSturcturemodv;
 import java.util.Random;
 
 @ElementsSturcturemodv.ModElement.Tag
-public class StructureSanddorf extends ElementsSturcturemodv.ModElement {
-	public StructureSanddorf(ElementsSturcturemodv instance) {
-		super(instance, 4);
+public class StructureNetherrunine extends ElementsSturcturemodv.ModElement {
+	public StructureNetherrunine(ElementsSturcturemodv instance) {
+		super(instance, 7);
 	}
 
 	@Override
 	public void generateWorld(Random random, int i2, int k2, World world, int dimID, IChunkGenerator cg, IChunkProvider cp) {
 		boolean dimensionCriteria = false;
 		boolean isNetherType = false;
-		if (dimID == 0)
+		if (dimID == -1) {
 			dimensionCriteria = true;
+			isNetherType = true;
+		}
 		if (!dimensionCriteria)
 			return;
-		if ((random.nextInt(1000000) + 1) <= 2500) {
+		if ((random.nextInt(1000000) + 1) <= 10000) {
 			int count = random.nextInt(1) + 1;
 			for (int a = 0; a < count; a++) {
 				int i = i2 + random.nextInt(16) + 8;
@@ -60,16 +62,18 @@ public class StructureSanddorf extends ElementsSturcturemodv.ModElement {
 					}
 				}
 				int j = height - 1;
-				boolean biomeCriteria = false;
-				Biome biome = world.getBiome(new BlockPos(i, j, k));
-				if (Biome.REGISTRY.getNameForObject(biome).equals(new ResourceLocation("desert")))
-					biomeCriteria = true;
-				if (!biomeCriteria)
+				IBlockState blockAt = world.getBlockState(new BlockPos(i, j + 1, k));
+				boolean blockCriteria = false;
+				IBlockState require;
+				require = Blocks.NETHERRACK.getDefaultState();
+				if (blockAt.getBlock() == require.getBlock())
+					blockCriteria = true;
+				if (!blockCriteria)
 					continue;
 				if (world.isRemote)
 					return;
 				Template template = ((WorldServer) world).getStructureTemplateManager().getTemplate(world.getMinecraftServer(),
-						new ResourceLocation("sturcturemodv", "sandneu"));
+						new ResourceLocation("sturcturemodv", "ruin_nether"));
 				if (template == null)
 					return;
 				Rotation rotation = Rotation.values()[random.nextInt(3)];

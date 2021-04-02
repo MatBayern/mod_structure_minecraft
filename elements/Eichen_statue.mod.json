@@ -2,10 +2,10 @@
   "_fv": 6,
   "_type": "structure",
   "definition": {
-    "structure": "sandneu",
+    "structure": "oak_statue",
     "randomlyRotateStructure": true,
     "surfaceDetectionType": "First motion blocking block",
-    "spawnProbability": 2500,
+    "spawnProbability": 2000,
     "minCountPerChunk": 1,
     "maxCountPerChunk": 1,
     "spawnLocation": "Ground",
@@ -13,10 +13,14 @@
     "spawnWorldTypes": [
       "Surface"
     ],
-    "restrictionBlocks": [],
+    "restrictionBlocks": [
+      {
+        "value": "Blocks.GRASS"
+      }
+    ],
     "restrictionBiomes": [
       {
-        "value": "desert"
+        "value": "forest"
       }
     ]
   }

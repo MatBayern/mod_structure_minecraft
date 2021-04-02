@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": {
+        "min": 4,
+        "max": 9
+      },
+      "bonus_rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:red_sandstone#0",
+          "weight": 100
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:log#32767",
+          "weight": 4
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "bonus_rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lit_redstone_ore",
+          "weight": 6
+        }
+      ]
+    }
+  ]
+}
