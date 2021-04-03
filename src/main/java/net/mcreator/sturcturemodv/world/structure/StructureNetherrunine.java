@@ -73,7 +73,7 @@ public class StructureNetherrunine extends ElementsSturcturemodv.ModElement {
 				if (world.isRemote)
 					return;
 				Template template = ((WorldServer) world).getStructureTemplateManager().getTemplate(world.getMinecraftServer(),
-						new ResourceLocation("sturcturemod", "chest_s"));
+						new ResourceLocation("sturcturemod", "ruin_nether_chest"));
 				if (template == null)
 					return;
 				Rotation rotation = Rotation.values()[random.nextInt(3)];

@@ -81,7 +81,7 @@ public class StructureUntergrund_basis extends ElementsSturcturemodv.ModElement 
 				if (world.isRemote)
 					return;
 				Template template = ((WorldServer) world).getStructureTemplateManager().getTemplate(world.getMinecraftServer(),
-						new ResourceLocation("sturcturemod", "underground"));
+						new ResourceLocation("sturcturemod", "undergroundchest"));
 				if (template == null)
 					return;
 				Rotation rotation = Rotation.values()[random.nextInt(3)];
