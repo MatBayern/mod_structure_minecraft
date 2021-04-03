@@ -80,7 +80,7 @@ public class StructureRuins1 extends ElementsSturcturemodv.ModElement {
 				if (world.isRemote)
 					return;
 				Template template = ((WorldServer) world).getStructureTemplateManager().getTemplate(world.getMinecraftServer(),
-						new ResourceLocation("sturcturemodv", "ruins1"));
+						new ResourceLocation("sturcturemod", "ruins1chest"));
 				if (template == null)
 					return;
 				Rotation rotation = Rotation.values()[random.nextInt(3)];

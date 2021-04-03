@@ -2,7 +2,7 @@
   "_fv": 6,
   "_type": "structure",
   "definition": {
-    "structure": "ruin_nether",
+    "structure": "chest_s",
     "randomlyRotateStructure": true,
     "surfaceDetectionType": "First motion blocking block",
     "spawnProbability": 800,

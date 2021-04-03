@@ -78,7 +78,7 @@ public class StructureEichen_statue extends ElementsSturcturemodv.ModElement {
 				if (world.isRemote)
 					return;
 				Template template = ((WorldServer) world).getStructureTemplateManager().getTemplate(world.getMinecraftServer(),
-						new ResourceLocation("sturcturemodv", "oak_statue"));
+						new ResourceLocation("sturcturemod", "oak_statuechest"));
 				if (template == null)
 					return;
 				Rotation rotation = Rotation.values()[random.nextInt(3)];

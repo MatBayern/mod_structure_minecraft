@@ -69,7 +69,7 @@ public class StructureSanddorf extends ElementsSturcturemodv.ModElement {
 				if (world.isRemote)
 					return;
 				Template template = ((WorldServer) world).getStructureTemplateManager().getTemplate(world.getMinecraftServer(),
-						new ResourceLocation("sturcturemodv", "sandneu"));
+						new ResourceLocation("sturcturemod", "sandneu"));
 				if (template == null)
 					return;
 				Rotation rotation = Rotation.values()[random.nextInt(3)];

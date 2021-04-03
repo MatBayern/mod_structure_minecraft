@@ -2,7 +2,7 @@
   "_fv": 6,
   "_type": "structure",
   "definition": {
-    "structure": "jungel_statue",
+    "structure": "jungel_statuechest",
     "randomlyRotateStructure": true,
     "surfaceDetectionType": "First motion blocking block",
     "spawnProbability": 500,

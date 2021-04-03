@@ -78,7 +78,7 @@ public class StructureMonolith extends ElementsSturcturemodv.ModElement {
 				if (world.isRemote)
 					return;
 				Template template = ((WorldServer) world).getStructureTemplateManager().getTemplate(world.getMinecraftServer(),
-						new ResourceLocation("sturcturemodv", "monolith"));
+						new ResourceLocation("sturcturemod", "monolithchest"));
 				if (template == null)
 					return;
 				Rotation rotation = Rotation.values()[random.nextInt(3)];

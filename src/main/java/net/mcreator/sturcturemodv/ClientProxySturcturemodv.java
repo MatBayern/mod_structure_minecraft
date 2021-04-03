@@ -13,7 +13,7 @@ public class ClientProxySturcturemodv implements IProxySturcturemodv {
 
 	@Override
 	public void preInit(FMLPreInitializationEvent event) {
-		OBJLoader.INSTANCE.addDomain("sturcturemodv");
+		OBJLoader.INSTANCE.addDomain("sturcturemod");
 	}
 
 	@Override

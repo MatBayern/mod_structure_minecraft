@@ -72,9 +72,9 @@
     "en_us": {}
   },
   "workspaceSettings": {
-    "modid": "sturcturemodv",
+    "modid": "sturcturemod",
     "modName": "Sturcture_mod_v0.1",
-    "version": "1.0.0",
+    "version": "0.1",
     "author": "Martin, Tobias",
     "websiteURL": "https://mcreator.net",
     "disableForgeVersionCheck": true,

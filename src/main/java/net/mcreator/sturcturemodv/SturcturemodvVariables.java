@@ -13,7 +13,7 @@ import net.minecraft.client.Minecraft;
 
 public class SturcturemodvVariables {
 	public static class MapVariables extends WorldSavedData {
-		public static final String DATA_NAME = "sturcturemodv_mapvars";
+		public static final String DATA_NAME = "sturcturemod_mapvars";
 		public MapVariables() {
 			super(DATA_NAME);
 		}
@@ -51,7 +51,7 @@ public class SturcturemodvVariables {
 	}
 
 	public static class WorldVariables extends WorldSavedData {
-		public static final String DATA_NAME = "sturcturemodv_worldvars";
+		public static final String DATA_NAME = "sturcturemod_worldvars";
 		public WorldVariables() {
 			super(DATA_NAME);
 		}

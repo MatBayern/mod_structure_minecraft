@@ -1,9 +1,9 @@
 [
   {
-    "modid": "sturcturemodv",
+    "modid": "sturcturemod",
     "name": "Sturcture_mod_v0.1",
     "description": "",
-    "version": "1.0.0",
+    "version": "0.1",
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "logoFile": "",
     "mcversion": "1.12.2",
