@@ -1,4 +1,4 @@
-# Minecraft structure mod
+# Minecraft structure mod 1.12.2
 This mod was made with <a href="https://mcreator.net/">mcreator</a>.
 ## Description &#128216;
 A small structure Mod for 1.12.2 with some custom loot and a little dungeon. For further information check out our <a href="https://github.com/MatBayern/mod_structure_minecraft/wiki">wiki</a>.
